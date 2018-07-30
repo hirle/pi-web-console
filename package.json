@@ -1,0 +1,24 @@
+{
+  "name": "pi-web-console",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirle/pi-web-console.git"
+  },
+  "author": "Hirle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hirle/pi-web-console/issues"
+  },
+  "homepage": "https://github.com/hirle/pi-web-console#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-json": "^1.0.0"
+  }
+}

@@ -6,6 +6,6 @@ Shutdown and reboot your raspberry pi with a single Click
 
 # Development
 
-To run localy pi-web-server:
+To run locally pi-web-server:
 * install NodeJS, v8.11.3 at least
-* npm start
+* `npm start`

@@ -17,6 +17,19 @@
       h1 > img {
         margin-right:11px;
       }
+      section {
+      	display: flex;
+      	flex-direction: column;
+      	align-items: stretch
+      }
+      button {
+      	border: line 1px;
+      	border-radius: 5px;
+      	margin: 24px;
+      	height: 48px;
+      	width: 100%;
+      	font-size: 14px;
+      }
     </style>
   </head>
 
@@ -26,9 +39,12 @@
     	<p>One click for shutting down or rebooting the Pi</p>
     </header>
     <section>
-		<p>status</p>
-		<button onClick="fetch('/api/reboot').then(console.log)">reboot</button>
-		<button onClick="fetch('/api/shutdown').then(console.log)">shutdown</button>
+		<article>
+		  <button onClick="fetch('/api/reboot').then(console.log)">reboot</button>
+		</article>
+		<article>
+		  <button onClick="fetch('/api/shutdown').then(console.log)">shutdown</button>
+		</article>		
     </section>
   </body>
 </html>

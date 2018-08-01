@@ -31,10 +31,14 @@ sudo systemctl enable pi-web-console.service
 ## Allow shutdown
 ```
 sudo visudo
+```
+
+In the section `User privilege specification`, add those two lines. They will allow the user pi-web-console to run the command shutdown.
+
+```
 pi-web-console ALL=/sbin/shutdown
 pi-web-console ALL=NOPASSWD: /sbin/shutdown
 ```
-
 
 # Development
 

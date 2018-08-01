@@ -32,7 +32,7 @@ module.exports = class Web {
 	        })
 	    });
 
-	    this.app.post('/api/reboot', (req, res) => {
+	    this.app.get('/api/reboot', (req, res) => {
 		      this.controller.reboot()
 		        .then( (ret) => {
 		          res.send(ret);

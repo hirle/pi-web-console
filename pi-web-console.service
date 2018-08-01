@@ -1,14 +1,14 @@
 [Unit]
-Description=pi-web-service
+Description=pi-web-console
 After=network.target
 
 [Service]
 ExecStart=/usr/bin/npm start
-WorkingDirectory=/opt/sonarsource/pi-web-service
+WorkingDirectory=/opt/pi-web-console
 StandardOutput=inherit
 StandardError=inherit
 Restart=always
-User=pi-web-service
+User=pi-web-console
 
 [Install]
 WantedBy=multi-user.target

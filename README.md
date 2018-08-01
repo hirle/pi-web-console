@@ -17,6 +17,8 @@ chsh /usr/sbin/nologin pi-web-console
 sudo mkdir /opt/pi-web-console
 cd /opt
 git clone https://github.com/hirle/pi-web-console.git
+cd /opt/pi-web-console
+npm install
 ```
 
 ## Register service
@@ -24,6 +26,13 @@ git clone https://github.com/hirle/pi-web-console.git
 cd /opt/pi-web-console
 sudo cp pi-web-console.service /etc/systemd/system
 sudo systemctl enable pi-web-console.service
+```
+
+## Allow shutdown
+```
+sudo visudo
+pi-web-console ALL=/sbin/shutdown
+pi-web-console ALL=NOPASSWD: /sbin/shutdown
 ```
 
 
